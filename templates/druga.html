@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>My second website</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-<h1>Witaj na mojej stronie domowej</h1>
-<img src="https://i.ytimg.com/vi/knLz2-1Xq9o/mqdefault.jpg" alt="to ja w świecie równoległym" title="RickyTrailerParkboys">
+{% extends "parent.html" %}
+{% block title %}me{% endblock %}
+{% block content %}
 <h2>Kontakt</h2>
 <ul>
     <li>email:...</li>
@@ -17,9 +10,10 @@
 <h3></h3>
 <h4></h4>
 <h5></h5>
-<form>
-<textarea rows="3" cols="30"></textarea>
+<form action="" method="POST">
+    
+    <input name="firstname"/>
+    <input type="submit"/>
 </form>
-<button type="button" >Prześlij</button>
-    </body>
-</html>
+
+{% endblock %}
